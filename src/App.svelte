@@ -16,14 +16,25 @@
 	}
 </script>
 
-<main>
+<main class="body">
+	<h1><img src="Star_Wars_Logo.svg.png" width="350px"></h1>
+	<p class="p">Characteristics of some characters from the movies:</p>
 	{#each people as person, i}
 		<Person url={person.url} />
 	{/each}
-	<h1></h1>
-	<p></p>
 </main>
 
 <style>
-	
+.body {
+	background-color: black;
+}
+.h1 {
+	color: gold;
+	font-size: xx-large;
+	margin-top: 0px;
+}
+.p {
+	color: white;
+	font-size: x-large;
+}
 </style>
